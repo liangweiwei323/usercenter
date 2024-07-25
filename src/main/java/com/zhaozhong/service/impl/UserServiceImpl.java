@@ -90,7 +90,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             ThrowUtils.error(Code.ERROR_EXIST, Msg.ERROR, "错误:用户账号已存在。");
         }
         userQueryWrapper = new QueryWrapper<>();
-        userQueryWrapper.eq("userAccount", userAccount);
+        userQueryWrapper.eq("planetCode", planetCode);
         count = userMapper.selectCount(userQueryWrapper);
         //当返回行数大于0，则说明表中已有该账号用户，注册失败
         if (count > 0) {
