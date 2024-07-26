@@ -18,5 +18,5 @@ create table user
     planetCode   varchar(16)                        not null comment '星球码',
     constraint userAccount
         unique (userAccount)
-)
+);
 
