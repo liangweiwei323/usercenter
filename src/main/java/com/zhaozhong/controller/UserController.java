@@ -4,6 +4,7 @@ import com.zhaozhong.common.BaseResponse;
 import com.zhaozhong.constant.ResponseConstant.Msg;
 import com.zhaozhong.utils.ResultUtils;
 import com.zhaozhong.utils.ThrowUtils;
+import com.zhaozhong.utils.StringUtils;
 import com.zhaozhong.constant.ResponseConstant.Code;
 import com.zhaozhong.constant.UserConstant;
 import com.zhaozhong.model.domain.User;
@@ -12,7 +13,6 @@ import com.zhaozhong.model.domain.request.UserRegisterRequest;
 import com.zhaozhong.model.domain.request.UserSearchRequest;
 import com.zhaozhong.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 
 import org.springframework.web.bind.annotation.*;
 
