@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zhaozhong.utils.ThrowUtils;
+import com.zhaozhong.utils.StringUtils;
 import com.zhaozhong.constant.ResponseConstant.Code;
 import com.zhaozhong.constant.ResponseConstant.Msg;
 import com.zhaozhong.constant.UserConstant;
@@ -13,7 +14,6 @@ import com.zhaozhong.model.domain.request.UserSearchRequest;
 import com.zhaozhong.service.UserService;
 import com.zhaozhong.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
